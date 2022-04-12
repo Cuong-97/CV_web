@@ -144,9 +144,10 @@ body{
 
 .page_2{
     width: 80%;
-    height: 100vh;
-    margin: 0 auto;
+    height: fit-content;
+    margin: 0rem auto 5rem auto;
     padding-top: 2rem;
+    cursor: default;
 }
 .page_2 .container h1{
     padding-top: 2rem;
@@ -243,7 +244,7 @@ body{
 }
 
 .page_2 .content .cards .address h5{
-    padding-left: 2rem;
+    padding-left: 1.8rem;
 }
 
 .page_2 .content .cards .facebook,
@@ -256,9 +257,10 @@ body{
 
 .page_3{
     width: 80%;
-    height: 100vh;
-    margin: 0 auto;
+    height: fit-content;
+    margin: 0rem auto 5rem auto;
     padding-top: 2rem;
+    cursor: default;
 }
 .page_3 .container h1{
     padding-top: 1rem;
@@ -297,7 +299,7 @@ body{
     border-radius: 2rem;
     box-shadow: 0 2rem 1rem rgba(0,0,0,0.1);
     color: var(--color-bg);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: center;
     font-weight: 800;
     letter-spacing: 1px;
@@ -309,7 +311,6 @@ body{
     display: flex;
     font-size: 0.9rem;
     letter-spacing: 1px;
-    cursor: default;
 }
 
 .page_3 .box h3 i{
@@ -333,20 +334,21 @@ body{
 }
 
 .page_3 .skills h2{
-    padding-top: 2rem;
-    border-radius:  2rem;
+    padding: 1.5rem 0;
     color: var(--color-primary-2);
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    border-bottom: 1px solid var(--color-gray);
+    width: 90%;
+    margin: 0 auto;
 }
 
 .page_3 .skills .skill{
     display: flex;
     justify-content: space-around;
     gap: 3rem;
-    padding: 2rem 0;
-    cursor: default;
+    padding: 1.5rem 0;
 }
 
 .page_3 .skills .skill div{
@@ -379,8 +381,8 @@ body{
 
 .page_4{
     width: 60%;
-    height: 100vh;
-    margin: 0 auto;
+    height: fit-content;
+    margin: 0rem auto 5rem auto;
     padding-top: 3rem;
 }
 
@@ -441,6 +443,7 @@ body{
     margin: auto;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
 }
 
 .page_4 .btn{
@@ -474,7 +477,7 @@ body{
 .page_5{
     width: 80%;
     height: fit-content;
-    margin: 0 auto;
+    margin: 0rem auto;
     overflow: hidden;
     padding-top: 3rem;
 }
@@ -574,6 +577,7 @@ body{
     text-align: center;
     letter-spacing: 3px;
     margin: 2rem 0;
+    cursor: default;
 }
 
 .footer .bar{
@@ -691,4 +695,32 @@ body{
 .back_to_top_none{
     opacity: 0;
     bottom: 40rem;
+}
+
+/* =================== Zoom in photo feeds =================== */
+.photo_qualifi_1,
+.photo_qualifi_2,
+.photo_qualifi_3,
+.photo_qualifi_4{
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: none;
+}
+
+.photo_qualifi_1 img,
+.photo_qualifi_2 img,
+.photo_qualifi_3 img,
+.photo_qualifi_4 img{
+    border-radius: 2rem;
+    width: 51vw;
+    height: auto;
+    display: block;
+    margin: auto;
 }

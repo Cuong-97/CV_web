@@ -99,3 +99,68 @@ $(document).ready(function() {
 });
 
 
+// ========== Zoom photo feeds ==========
+
+const ZoomPhoto1 = document.querySelector('#Zoom_photo_1')
+const photoFeeds1 = document.querySelector('.photo_qualifi_1')
+
+const ZoomPhoto2 = document.querySelector('#Zoom_photo_2')
+const photoFeeds2 = document.querySelector('.photo_qualifi_2')
+
+const ZoomPhoto3 = document.querySelector('#Zoom_photo_3')
+const photoFeeds3 = document.querySelector('.photo_qualifi_3')
+
+const ZoomPhoto4 = document.querySelector('#Zoom_photo_4')
+const photoFeeds4 = document.querySelector('.photo_qualifi_4')
+
+// ====== Open & Close Zoom photo feeds method==========
+
+const openPhotoFeeds1 = () => {
+    photoFeeds1.style.display = 'grid';
+}
+const closePhotoFeeds1 = (event) => {
+    if (event.target.classList.contains('photo_qualifi_1')) {
+        photoFeeds1.style.display = 'none';
+    }
+}
+
+const openPhotoFeeds2 = () => {
+    photoFeeds2.style.display = 'grid';
+}
+const closePhotoFeeds2 = (event) => {
+    if (event.target.classList.contains('photo_qualifi_2')) {
+        photoFeeds2.style.display = 'none';
+    }
+}
+
+const openPhotoFeeds3 = () => {
+    photoFeeds3.style.display = 'grid';
+}
+const closePhotoFeeds3 = (event) => {
+    if (event.target.classList.contains('photo_qualifi_3')) {
+        photoFeeds3.style.display = 'none';
+    }
+}
+
+const openPhotoFeeds4 = () => {
+    photoFeeds4.style.display = 'grid';
+}
+const closePhotoFeeds4 = (event) => {
+    if (event.target.classList.contains('photo_qualifi_4')) {
+        photoFeeds4.style.display = 'none';
+    }
+}
+
+// ========== Open & Close Zoom photo feeds ==========
+
+photoFeeds1.addEventListener('click', closePhotoFeeds1);
+ZoomPhoto1.addEventListener('click', openPhotoFeeds1);
+
+photoFeeds2.addEventListener('click', closePhotoFeeds2);
+ZoomPhoto2.addEventListener('click', openPhotoFeeds2);
+
+photoFeeds3.addEventListener('click', closePhotoFeeds3);
+ZoomPhoto3.addEventListener('click', openPhotoFeeds3);
+
+photoFeeds4.addEventListener('click', closePhotoFeeds4);
+ZoomPhoto4.addEventListener('click', openPhotoFeeds4);
