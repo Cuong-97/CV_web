@@ -4,9 +4,30 @@ const listBox = document.querySelectorAll('.box_page_4');
 const btnLeft = document.querySelector('.btn_left');
 const btnRight = document.querySelector('.btn_right');
 
-document.addEventListener('DOMContentLoaded', function() {
-    make_slide(1)
-})
+document.addEventListener('DOMContentLoaded', function () {
+    window.addEventListener('resize', function () {
+        if (window.innerWidth >= 1366) {
+            make_slide(1);
+        } else if (window.innerWidth >= 992) {
+            make_slide(1);
+        } else {
+            make_slide(1);
+        }
+    });
+
+    const media = [
+        window.matchMedia('(min-width: 1366px)'),
+        window.matchMedia('(min-width: 992px)'),
+    ];
+
+    if (media[0].matches) {
+        make_slide(1);
+    } else if (media[1].matches) {
+        make_slide(1);
+    } else {
+        make_slide(1);
+    }
+});
 
 function make_slide(slide_quantity) {
 
@@ -44,7 +65,7 @@ function make_slide(slide_quantity) {
 $(document).ready(function() {
 	$(window).scroll(function(event) {
 		var pos_body = $('html,body').scrollTop();
-		console.log(pos_body);
+		// console.log(pos_body);
 
 // show nav active for laptop
         if(pos_body < 615){
