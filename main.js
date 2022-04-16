@@ -54,34 +54,72 @@ $(document).ready(function() {
             $('.qualification').removeClass('active');
             $('.products').removeClass('active');
         } 
-        else if(pos_body > 615 && pos_body < 1120 && window.innerWidth > 701){
+        else if(pos_body > 615 && pos_body < 1120 && window.innerWidth >= 993){
             $('.home').removeClass('active');
             $('.info').addClass('active');
             $('.education').removeClass('active');
             $('.qualification').removeClass('active');
             $('.products').removeClass('active');
         } 
-        else if ( pos_body > 1120 && pos_body < 1900 && window.innerWidth > 701) {
+        else if ( pos_body > 1120 && pos_body < 1900 && window.innerWidth >= 993) {
             $('.home').removeClass('active');
             $('.info').removeClass('active');
             $('.education').addClass('active');
             $('.qualification').removeClass('active');
             $('.products').removeClass('active');
         } 
-        else if ( pos_body > 1900 && pos_body < 2590 && window.innerWidth > 701) {
+        else if ( pos_body > 1900 && pos_body < 2590 && window.innerWidth >= 993) {
             $('.home').removeClass('active');
             $('.info').removeClass('active');
             $('.education').removeClass('active');
             $('.qualification').addClass('active');
             $('.products').removeClass('active');
         } 
-        else if ( pos_body > 2590 && window.innerWidth > 701) {
+        else if ( pos_body > 2590 && window.innerWidth >= 993) {
             $('.home').removeClass('active');
             $('.info').removeClass('active');
             $('.education').removeClass('active');
             $('.qualification').removeClass('active');
             $('.products').addClass('active');
         }
+
+ // show nav active for tablet
+    if(pos_body < 535){
+        $('.home').addClass('active');
+        $('.info').removeClass('active');
+        $('.education').removeClass('active');
+        $('.qualification').removeClass('active');
+        $('.products').removeClass('active');
+    } 
+    else if(pos_body > 535 && pos_body < 1490 && window.innerWidth < 993 && window.innerWidth > 701){
+        $('.home').removeClass('active');
+        $('.info').addClass('active');
+        $('.education').removeClass('active');
+        $('.qualification').removeClass('active');
+        $('.products').removeClass('active');
+    } 
+    else if ( pos_body > 1490 && pos_body < 2320 && window.innerWidth < 993 && window.innerWidth > 701) {
+        $('.home').removeClass('active');
+        $('.info').removeClass('active');
+        $('.education').addClass('active');
+        $('.qualification').removeClass('active');
+        $('.products').removeClass('active');
+    } 
+    else if ( pos_body > 2320 && pos_body < 3130 && window.innerWidth < 993 && window.innerWidth > 701) {
+        $('.home').removeClass('active');
+        $('.info').removeClass('active');
+        $('.education').removeClass('active');
+        $('.qualification').addClass('active');
+        $('.products').removeClass('active');
+    } 
+    else if ( pos_body > 3130 && window.innerWidth < 993 && window.innerWidth > 701) {
+        $('.home').removeClass('active');
+        $('.info').removeClass('active');
+        $('.education').removeClass('active');
+        $('.qualification').removeClass('active');
+        $('.products').addClass('active');
+    }
+
 // show nav active for mobile
     if(pos_body < 685){
         $('.home').addClass('active');
