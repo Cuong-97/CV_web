@@ -233,7 +233,9 @@ body{
     width: 100%;
     padding-left: 2.6rem;
 }
-
+    .page_2 .content .cards .address2{
+        display: none;
+    }
 .page_2 .content .cards .address i{
     padding-left: 2.3rem;
 }
@@ -276,6 +278,10 @@ body{
     justify-content: space-around;
     gap: 3rem;
     width: 100%;
+}
+
+.page_3 .content_sub{
+    display: none;
 }
 
 .page_3 .box{
@@ -452,13 +458,12 @@ body{
     justify-content: space-between;
     z-index: 10;
     top: 13rem;
-    width: 98%;
+    width: 100%;
 }
 
 .page_4 .btn_left,
 .page_4 .btn_right{
     display: block;
-    width: 0.1rem;
     height: 0.1rem;
     cursor: pointer;
     color: var(--color-blue);
@@ -646,10 +651,7 @@ body{
     transition: 0.3s;
 }
 
-.nav a:hover{
-    background:rgba(82, 178, 250, 0.8);
-    color: var(--color-white);
-}
+
 
 .nav a.active{
     background:rgba(82, 178, 250, 0.9);
@@ -723,4 +725,221 @@ body{
     height: auto;
     display: block;
     margin: auto;
+}
+
+/*========================================== Media queries for laptop ==========================================*/
+
+@media screen and (min-width: 710px) {
+    .nav a:hover{
+        background:rgba(82, 178, 250, 0.8);
+        color: var(--color-white);
+    }
+}
+
+/*========================================== Media queries for mobile phone ==========================================*/
+
+@media screen and (max-width: 700px) {
+/* page 1 */
+    .page_1 {
+        width: 100%;
+        height: fit-content;
+        margin: 0 auto;
+        overflow: hidden;
+        padding-top: 5rem;
+    }
+    .page_1 .avatar {
+        width: 20rem;
+        height: 22rem;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 2rem;
+    }
+    .page_1 .sub h4 {
+        right: 0;
+        cursor: none;
+    }
+    .page_1 .sub .icon {
+        right: 0.5rem;
+    }
+/* page 2 */
+    .page_2 {
+        margin: 0rem auto 3rem auto;
+    }
+    .page_2 .content {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5rem;
+    }
+    .page_2 .content .avatar img {
+        width: 20rem;
+    }
+    .page_2 .content .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .page_2 .content .cards .address{
+        display: none;
+    }
+    .page_2 .content .cards .address2{
+        display: flex;
+    }
+    .page_2 .content .cards .card h3 {
+        width: 7rem;
+    }
+    .page_2 .content .cards .facebook,
+    .page_2 .content .cards .mail,
+    .page_2 .content .cards .phone{
+    background: var(--color-bg-variant);
+    backdrop-filter: blur(15px);
+}
+/* page 3 */
+    .page_3 .content {
+        display: none;
+    }
+    .page_3 .container h1 {
+        display: none;
+    }
+    .page_3 .content_sub{
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+        width: 100%;
+        background-color: var(--color-bg-variant);
+        border-radius: 2rem;
+        border: 1px solid var(--color-bg-variant);
+        transition: 0.3s;
+        backdrop-filter: blur(100px);
+    }
+    .page_3 .content_sub h2{
+        padding: 1.5rem 0;
+        color: var(--color-primary-2);
+        font-size: 1.5rem;
+        text-align: center;
+        letter-spacing: 1.5px;
+        border-bottom: 1px solid var(--color-gray);
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .page_3 .content_sub .skill{
+        display: flex;
+        justify-content: space-around;
+        gap: 3rem;
+        padding: 1.5rem 0;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .page_3 .content_sub .skill div h3{
+        font-size: 0.9rem;
+        gap: 1rem;
+        display: flex;
+        letter-spacing: 1px;
+        justify-content: center;
+        color: var(--color-gray);
+    }
+    
+    .page_3 .content_sub .skill div h3 i{
+        color: var(--color-primary-2);
+        margin-top: 2px;
+    }
+    
+    .page_3 .content_sub .skill div h5{
+        color: var(--color-light);
+        font-size: 0.75rem;
+        text-align: center;
+        margin-top: 0.3rem;
+        letter-spacing: 1px;
+    }
+
+    /*  */
+    .page_3 .skills  {
+        margin-top: 3rem;
+    }
+    .page_3 .skills h2 {
+        width: 80%;
+    }
+    .page_3 .skills .skill {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        gap: 3rem;
+    }
+    .page_3 .skills .skill div {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .page_3 .skills .skill div h3 {
+        justify-content: center;
+    }
+/* page 4 */
+    .page_4{
+        width: 90%;
+        padding: 0;
+    }
+    .page_4 .btn {
+        top: 10rem;
+        width: 100%;
+        cursor: none;
+    }
+    .page_4 .slide .box_show {
+        display: flex;
+        overflow: hidden;
+        transition: 0.6s;
+        position: relative;
+        justify-content: center;
+    }
+    .page_4 .box_page_4 {
+        flex-direction: column;
+        display: flex;
+        cursor: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .page_4 .box_page_4 img {
+        width: 14rem;
+        border-radius: 0.5rem;
+        cursor: none;
+    }
+/* footer */
+    .footer .content {
+        width: 90%;
+        margin: 0 auto 8rem;
+    }
+    .footer h1 {
+        color: var(--color-bg);
+        font-weight: 500;
+        text-align: center;
+        letter-spacing: 3px;
+        margin: 2rem 0 1rem 0;
+        cursor: default;
+    }
+    .footer .bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .icon {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+/* back to top */
+    .back_to_top {
+        display: none;
+    }
+/* zoom photo qualification */
+    .photo_qualifi_1, .photo_qualifi_2, .photo_qualifi_3, .photo_qualifi_4 {
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .photo_qualifi_1 img, .photo_qualifi_2 img, .photo_qualifi_3 img, .photo_qualifi_4 img {
+        border-radius: 1rem;
+        width: 90vw;
+    }
 }
