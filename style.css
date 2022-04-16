@@ -883,8 +883,9 @@ body{
     }
     .page_4 .btn {
         top: 10rem;
-        width: 100%;
+        width: 96%;
         cursor: none;
+        left: 2%;
     }
     .page_4 .slide .box_show {
         display: flex;
