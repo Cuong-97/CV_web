@@ -470,7 +470,7 @@ body{
     cursor: pointer;
     color: var(--color-blue);
     background: none;
-    font-size: 2.2rem;
+    font-size: 2rem;
     opacity: 0.6;
     transition: 0.3s;
 }
@@ -1295,6 +1295,11 @@ body{
     .page_4 .box_page_4 img {
         width: 14rem;
         border-radius: 0.5rem;
+        cursor: none;
+    }
+    .page_4 .btn_left,
+    .page_4 .btn_right{
+        font-size: 1.5rem;
         cursor: none;
     }
 /* footer */
