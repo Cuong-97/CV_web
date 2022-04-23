@@ -454,6 +454,11 @@ body{
     cursor: pointer;
 }
 
+.page_4 .box_page_4 #Zoom_photo_4{
+    width: auto;
+    height: 20rem;
+}
+
 .page_4 .btn{
     position: relative;
     display: flex;
@@ -723,11 +728,12 @@ body{
 .photo_qualifi_3 img,
 .photo_qualifi_4 img{
     border-radius: 2rem;
-    width: 51vw;
-    height: auto;
+    width: auto;
+    height: 90vh;
     display: block;
     margin: auto;
 }
+
 
 /*========================================== Media queries for laptop ==========================================*/
 @media (min-width: 1200px){
@@ -861,6 +867,10 @@ body{
         .page_4 .box_page_4 img {
             width: 70%;
         }
+        .page_4 .box_page_4 #Zoom_photo_4{
+            width: auto;
+            height: 26.5rem;
+        }
         .page_4 .btn {
             position: relative;
             display: flex;
@@ -876,8 +886,13 @@ body{
             max-width: 45%;
         }
     /* zoom photo */
-        .photo_qualifi_1 img, .photo_qualifi_2 img, .photo_qualifi_3 img, .photo_qualifi_4 img {
+        .photo_qualifi_1 img, .photo_qualifi_2 img, .photo_qualifi_3 img {
             width: 75vw;
+            height: auto;
+        }
+        .photo_qualifi_4 img{
+            width: auto;
+            height: 85vh;
         }
     /* footer */
         .footer .content {
@@ -1070,6 +1085,10 @@ body{
         border-radius: 1rem;
         cursor: none;
     }
+    .page_4 .box_page_4 #Zoom_photo_4{
+        width: auto;
+        height: 22.5rem;
+    }
 /* page 5 */
     .page_5 {
         width: 90%;
@@ -1115,9 +1134,14 @@ body{
     .photo_qualifi_1, .photo_qualifi_2, .photo_qualifi_3, .photo_qualifi_4 {
         background: rgba(0, 0, 0, 0.8);
     }
-    .photo_qualifi_1 img, .photo_qualifi_2 img, .photo_qualifi_3 img, .photo_qualifi_4 img {
+    .photo_qualifi_1 img, .photo_qualifi_2 img, .photo_qualifi_3 img {
         border-radius: 1rem;
         width: 90vw;
+        height: auto;
+    }
+    .photo_qualifi_4 img{
+        width: auto;
+        height: 85vh;
     }
 }
 
@@ -1294,8 +1318,13 @@ body{
     }
     .page_4 .box_page_4 img {
         width: 14rem;
+        height: auto;
         border-radius: 0.5rem;
         cursor: none;
+    }
+    .page_4 .box_page_4 #Zoom_photo_4{
+        width: auto;
+        height: 14rem;
     }
     .page_4 .btn_left,
     .page_4 .btn_right{
@@ -1338,5 +1367,6 @@ body{
     .photo_qualifi_1 img, .photo_qualifi_2 img, .photo_qualifi_3 img, .photo_qualifi_4 img {
         border-radius: 1rem;
         width: 90vw;
+        height: auto;
     }
 }
